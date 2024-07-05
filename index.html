@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title>Duocell - Compartiendo el futuro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style></style>
+    <script>
+      /* Set the width of the side navigation to 250px */
+      function openNav() {
+        document.getElementById("mySidenav").style.left = "0";
+      }
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.left = "100%";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="fixed-header">
+      <div class="header-section">
+        <div class="logo">
+          <a href="#">
+            <img class="big_logo" src="images/logo_t.png" alt="logo">
+            <img class="small_logo" src="images/logo_mini_t.png" alt="logo">
+          </a>
+        </div>
+        <div class="menu">
+          <nav id="first-nav" class="visible-nav">
+            <a href="#quienes-somos">Quiénes somos</a>
+            <a href="#nuestros-clientes">Clientes</a>
+            <a href="#conviertete-en-distribuidor">Conviértete en distribuidor</a>
+            <a href="#contactanos">Contáctanos</a>
+            <a href="https://www.linkedin.com/company/duocellsa/" target="_blank">
+              <svg class="send-link" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.9895 7.35004C9.2095 7.10004 9.39952 6.84003 9.62952 6.62003C10.3395 5.95003 11.1795 5.61003 12.1595 5.62003C12.6995 5.62003 13.2295 5.66003 13.7495 5.81003C14.9395 6.15003 15.6295 6.97004 15.9595 8.13004C16.2095 9.00004 16.2495 9.89002 16.2495 10.79C16.2495 12.68 16.2495 14.57 16.2495 16.46C16.2495 16.64 16.1995 16.68 16.0295 16.68C15.0595 16.68 14.0795 16.68 13.1095 16.68C12.9395 16.68 12.8995 16.63 12.8995 16.47C12.8995 14.67 12.8995 12.87 12.8995 11.08C12.8995 10.63 12.8695 10.18 12.7395 9.74004C12.5095 8.93004 11.9295 8.52004 11.0795 8.57004C9.92947 8.63004 9.32957 9.20004 9.17957 10.38C9.13957 10.66 9.12952 10.94 9.12952 11.22C9.12952 12.97 9.12952 14.72 9.12952 16.47C9.12952 16.64 9.08955 16.7 8.90955 16.69C7.92955 16.69 6.94948 16.69 5.96948 16.69C5.80948 16.69 5.76953 16.65 5.76953 16.49C5.76953 13.03 5.76953 9.56004 5.76953 6.10004C5.76953 5.93004 5.8295 5.89003 5.9895 5.89003C6.9195 5.89003 7.84954 5.89003 8.77954 5.89003C8.94954 5.89003 8.9995 5.94003 8.9895 6.11003C8.9895 6.52003 8.9895 6.94004 8.9895 7.35004Z" />
+                <path d="M3.65002 11.31C3.65002 13.02 3.65002 14.74 3.65002 16.45C3.65002 16.64 3.60003 16.7 3.41003 16.7C2.44003 16.69 1.45999 16.7 0.48999 16.7C0.32999 16.7 0.290039 16.66 0.290039 16.5C0.290039 13.03 0.290039 9.56004 0.290039 6.10004C0.290039 5.96004 0.31998 5.91003 0.47998 5.91003C1.46998 5.91003 2.44994 5.91003 3.43994 5.91003C3.62994 5.91003 3.66003 5.98003 3.66003 6.14003C3.66003 7.87003 3.66003 9.59004 3.66003 11.32L3.65002 11.31Z" />
+                <path d="M3.92004 2.46002C3.92004 3.54002 3.04998 4.41002 1.97998 4.41002C0.919981 4.41002 0.0400391 3.53002 0.0400391 2.47002C0.0400391 1.40002 0.91999 0.52002 1.98999 0.52002C3.04999 0.52002 3.93005 1.39001 3.93005 2.45001L3.92004 2.46002Z" />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/Duocellec" target="_blank">
+              <svg class="send-link" width="10" height="17" viewBox="0 0 10 17" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.57983 9.52002L9.01984 6.62988H6.24985V4.76001C6.24985 3.97001 6.63985 3.19995 7.87985 3.19995H9.13986V0.73999C9.13986 0.73999 7.99984 0.540039 6.89984 0.540039C4.61984 0.540039 3.12985 1.91993 3.12985 4.42993V6.62988H0.589844V9.52002H3.12985V16.5C3.63985 16.58 4.15985 16.6201 4.68985 16.6201C5.21985 16.6201 5.73985 16.58 6.24985 16.5V9.52002H8.57983Z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/duocellsa/" target="_blank">
+              <svg class="send-link" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.71008 1.91C12.2601 1.91 12.5701 1.91 13.5801 1.97C14.5101 2.01 15.0201 2.17 15.3601 2.3C15.8101 2.47 16.1301 2.68 16.4601 3.02C16.7901 3.35 17.0002 3.67 17.1802 4.12C17.3102 4.46 17.4701 4.95999 17.5101 5.89999C17.5601 6.90999 17.5701 7.21 17.5701 9.77C17.5701 12.33 17.5701 12.63 17.5101 13.64C17.4701 14.57 17.3102 15.08 17.1802 15.42C17.0102 15.87 16.8001 16.19 16.4601 16.52C16.1301 16.85 15.8101 17.06 15.3601 17.24C15.0201 17.37 14.5201 17.53 13.5801 17.57C12.5701 17.62 12.2701 17.63 9.71008 17.63C7.15008 17.63 6.85009 17.63 5.84009 17.57C4.91009 17.53 4.40018 17.37 4.06018 17.24C3.61018 17.07 3.29008 16.86 2.96008 16.52C2.63008 16.19 2.42011 15.87 2.24011 15.42C2.11011 15.08 1.95016 14.58 1.91016 13.64C1.86016 12.63 1.8501 12.33 1.8501 9.77C1.8501 7.21 1.85016 6.90999 1.91016 5.89999C1.95016 4.96999 2.11011 4.46 2.24011 4.12C2.41011 3.67 2.62008 3.35 2.96008 3.02C3.29008 2.69 3.61018 2.48 4.06018 2.3C4.40018 2.17 4.90009 2.01 5.84009 1.97C6.85009 1.92 7.15008 1.91 9.71008 1.91ZM9.71008 0.190002C7.11008 0.190002 6.79014 0.2 5.77014 0.25C4.75014 0.3 4.06007 0.460002 3.45007 0.690002C2.82007 0.930002 2.29013 1.25999 1.76013 1.78999C1.23013 2.31999 0.900156 2.86 0.660156 3.48C0.420156 4.09 0.260093 4.78 0.220093 5.8C0.170093 6.82 0.160156 7.15001 0.160156 9.74001C0.160156 12.33 0.170093 12.66 0.220093 13.68C0.270093 14.7 0.430156 15.39 0.660156 16C0.900156 16.63 1.23013 17.16 1.76013 17.69C2.29013 18.22 2.83007 18.55 3.45007 18.79C4.06007 19.03 4.75014 19.19 5.77014 19.23C6.79014 19.28 7.12008 19.29 9.71008 19.29C12.3001 19.29 12.6301 19.28 13.6501 19.23C14.6701 19.18 15.3601 19.02 15.9701 18.79C16.6001 18.55 17.1302 18.22 17.6602 17.69C18.1902 17.16 18.5201 16.62 18.7601 16C19.0001 15.39 19.1601 14.7 19.2001 13.68C19.2501 12.66 19.2601 12.33 19.2601 9.74001C19.2601 7.15001 19.2501 6.82 19.2001 5.8C19.1501 4.78 18.9901 4.09 18.7601 3.48C18.5201 2.85 18.1902 2.31999 17.6602 1.78999C17.1302 1.25999 16.5901 0.930002 15.9701 0.690002C15.3601 0.450002 14.6701 0.29 13.6501 0.25C12.6301 0.2 12.3001 0.190002 9.71008 0.190002Z" />
+                <path d="M9.70972 4.84C6.99972 4.84 4.7998 7.04 4.7998 9.75C4.7998 12.46 6.99972 14.66 9.70972 14.66C12.4197 14.66 14.6198 12.46 14.6198 9.75C14.6198 7.04 12.4197 4.84 9.70972 4.84ZM9.70972 12.94C7.94972 12.94 6.51978 11.51 6.51978 9.75C6.51978 7.99 7.94972 6.56 9.70972 6.56C11.4697 6.56 12.8998 7.99 12.8998 9.75C12.8998 11.51 11.4697 12.94 9.70972 12.94Z" />
+                <path d="M14.8198 5.8C15.455 5.8 15.9698 5.28512 15.9698 4.64999C15.9698 4.01487 15.455 3.5 14.8198 3.5C14.1847 3.5 13.6699 4.01487 13.6699 4.64999C13.6699 5.28512 14.1847 5.8 14.8198 5.8Z" />
+              </svg>
+            </a>
+          </nav>
+          <nav id="second-nav" class="hidden-nav">
+            <div>Quiénes somos</div>
+            <div>Clientes</div>
+            <div>Conviértete en distribuidor</div>
+            <div>Contáctanos</div>
+            <div class="second-nav-img">
+              <img alt="Enlace LinkedIn" src="images/linkedin.svg">
+            </div>
+            <div class="second-nav-img">
+              <img alt="Enlace Facebook" src="images/facebook.svg">
+            </div>
+            <div class="second-nav-img">
+              <img alt="Enlace Instagram" src="images/instagram.svg">
+            </div>
+          </nav>
+        </div>
+        <div class="hamburger-container">
+          <a href="https://www.linkedin.com/company/duocellsa/" target="_blank">
+            <svg class="send-link" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.9895 7.35004C9.2095 7.10004 9.39952 6.84003 9.62952 6.62003C10.3395 5.95003 11.1795 5.61003 12.1595 5.62003C12.6995 5.62003 13.2295 5.66003 13.7495 5.81003C14.9395 6.15003 15.6295 6.97004 15.9595 8.13004C16.2095 9.00004 16.2495 9.89002 16.2495 10.79C16.2495 12.68 16.2495 14.57 16.2495 16.46C16.2495 16.64 16.1995 16.68 16.0295 16.68C15.0595 16.68 14.0795 16.68 13.1095 16.68C12.9395 16.68 12.8995 16.63 12.8995 16.47C12.8995 14.67 12.8995 12.87 12.8995 11.08C12.8995 10.63 12.8695 10.18 12.7395 9.74004C12.5095 8.93004 11.9295 8.52004 11.0795 8.57004C9.92947 8.63004 9.32957 9.20004 9.17957 10.38C9.13957 10.66 9.12952 10.94 9.12952 11.22C9.12952 12.97 9.12952 14.72 9.12952 16.47C9.12952 16.64 9.08955 16.7 8.90955 16.69C7.92955 16.69 6.94948 16.69 5.96948 16.69C5.80948 16.69 5.76953 16.65 5.76953 16.49C5.76953 13.03 5.76953 9.56004 5.76953 6.10004C5.76953 5.93004 5.8295 5.89003 5.9895 5.89003C6.9195 5.89003 7.84954 5.89003 8.77954 5.89003C8.94954 5.89003 8.9995 5.94003 8.9895 6.11003C8.9895 6.52003 8.9895 6.94004 8.9895 7.35004Z" />
+              <path d="M3.65002 11.31C3.65002 13.02 3.65002 14.74 3.65002 16.45C3.65002 16.64 3.60003 16.7 3.41003 16.7C2.44003 16.69 1.45999 16.7 0.48999 16.7C0.32999 16.7 0.290039 16.66 0.290039 16.5C0.290039 13.03 0.290039 9.56004 0.290039 6.10004C0.290039 5.96004 0.31998 5.91003 0.47998 5.91003C1.46998 5.91003 2.44994 5.91003 3.43994 5.91003C3.62994 5.91003 3.66003 5.98003 3.66003 6.14003C3.66003 7.87003 3.66003 9.59004 3.66003 11.32L3.65002 11.31Z" />
+              <path d="M3.92004 2.46002C3.92004 3.54002 3.04998 4.41002 1.97998 4.41002C0.919981 4.41002 0.0400391 3.53002 0.0400391 2.47002C0.0400391 1.40002 0.91999 0.52002 1.98999 0.52002C3.04999 0.52002 3.93005 1.39001 3.93005 2.45001L3.92004 2.46002Z" />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/Duocellec" target="_blank">
+            <svg class="send-link" width="10" height="17" viewBox="0 0 10 17" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.57983 9.52002L9.01984 6.62988H6.24985V4.76001C6.24985 3.97001 6.63985 3.19995 7.87985 3.19995H9.13986V0.73999C9.13986 0.73999 7.99984 0.540039 6.89984 0.540039C4.61984 0.540039 3.12985 1.91993 3.12985 4.42993V6.62988H0.589844V9.52002H3.12985V16.5C3.63985 16.58 4.15985 16.6201 4.68985 16.6201C5.21985 16.6201 5.73985 16.58 6.24985 16.5V9.52002H8.57983Z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/duocellsa/" target="_blank">
+            <svg class="send-link" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.71008 1.91C12.2601 1.91 12.5701 1.91 13.5801 1.97C14.5101 2.01 15.0201 2.17 15.3601 2.3C15.8101 2.47 16.1301 2.68 16.4601 3.02C16.7901 3.35 17.0002 3.67 17.1802 4.12C17.3102 4.46 17.4701 4.95999 17.5101 5.89999C17.5601 6.90999 17.5701 7.21 17.5701 9.77C17.5701 12.33 17.5701 12.63 17.5101 13.64C17.4701 14.57 17.3102 15.08 17.1802 15.42C17.0102 15.87 16.8001 16.19 16.4601 16.52C16.1301 16.85 15.8101 17.06 15.3601 17.24C15.0201 17.37 14.5201 17.53 13.5801 17.57C12.5701 17.62 12.2701 17.63 9.71008 17.63C7.15008 17.63 6.85009 17.63 5.84009 17.57C4.91009 17.53 4.40018 17.37 4.06018 17.24C3.61018 17.07 3.29008 16.86 2.96008 16.52C2.63008 16.19 2.42011 15.87 2.24011 15.42C2.11011 15.08 1.95016 14.58 1.91016 13.64C1.86016 12.63 1.8501 12.33 1.8501 9.77C1.8501 7.21 1.85016 6.90999 1.91016 5.89999C1.95016 4.96999 2.11011 4.46 2.24011 4.12C2.41011 3.67 2.62008 3.35 2.96008 3.02C3.29008 2.69 3.61018 2.48 4.06018 2.3C4.40018 2.17 4.90009 2.01 5.84009 1.97C6.85009 1.92 7.15008 1.91 9.71008 1.91ZM9.71008 0.190002C7.11008 0.190002 6.79014 0.2 5.77014 0.25C4.75014 0.3 4.06007 0.460002 3.45007 0.690002C2.82007 0.930002 2.29013 1.25999 1.76013 1.78999C1.23013 2.31999 0.900156 2.86 0.660156 3.48C0.420156 4.09 0.260093 4.78 0.220093 5.8C0.170093 6.82 0.160156 7.15001 0.160156 9.74001C0.160156 12.33 0.170093 12.66 0.220093 13.68C0.270093 14.7 0.430156 15.39 0.660156 16C0.900156 16.63 1.23013 17.16 1.76013 17.69C2.29013 18.22 2.83007 18.55 3.45007 18.79C4.06007 19.03 4.75014 19.19 5.77014 19.23C6.79014 19.28 7.12008 19.29 9.71008 19.29C12.3001 19.29 12.6301 19.28 13.6501 19.23C14.6701 19.18 15.3601 19.02 15.9701 18.79C16.6001 18.55 17.1302 18.22 17.6602 17.69C18.1902 17.16 18.5201 16.62 18.7601 16C19.0001 15.39 19.1601 14.7 19.2001 13.68C19.2501 12.66 19.2601 12.33 19.2601 9.74001C19.2601 7.15001 19.2501 6.82 19.2001 5.8C19.1501 4.78 18.9901 4.09 18.7601 3.48C18.5201 2.85 18.1902 2.31999 17.6602 1.78999C17.1302 1.25999 16.5901 0.930002 15.9701 0.690002C15.3601 0.450002 14.6701 0.29 13.6501 0.25C12.6301 0.2 12.3001 0.190002 9.71008 0.190002Z" />
+              <path d="M9.70972 4.84C6.99972 4.84 4.7998 7.04 4.7998 9.75C4.7998 12.46 6.99972 14.66 9.70972 14.66C12.4197 14.66 14.6198 12.46 14.6198 9.75C14.6198 7.04 12.4197 4.84 9.70972 4.84ZM9.70972 12.94C7.94972 12.94 6.51978 11.51 6.51978 9.75C6.51978 7.99 7.94972 6.56 9.70972 6.56C11.4697 6.56 12.8998 7.99 12.8998 9.75C12.8998 11.51 11.4697 12.94 9.70972 12.94Z" />
+              <path d="M14.8198 5.8C15.455 5.8 15.9698 5.28512 15.9698 4.64999C15.9698 4.01487 15.455 3.5 14.8198 3.5C14.1847 3.5 13.6699 4.01487 13.6699 4.64999C13.6699 5.28512 14.1847 5.8 14.8198 5.8Z" />
+            </svg>
+          </a>
+          <div onclick="openNav()" class="hamburger">
+            <img alt="menu de hamburguesa" src="images/hamburger.png">
+            <img class="hamburger-hover" alt="menu de hamburguesa" src="images/hamburger-red.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#quienes-somos" onclick="closeNav()">Quiénes somos</a>
+      <a href="#nuestros-clientes" onclick="closeNav()">Nuestros clientes</a>
+      <a href="#conviertete-en-distribuidor" onclick="closeNav()">Conviértete en distribuidor</a>
+      <a href="#contactanos" onclick="closeNav()">Contáctanos</a>
+    </div>
+    <div class="video-section">
+      <div class="video">
+        <!-- <img alt="video" src="images/videoduocell_1.png" > -->
+        <div class="carousel-container">
+          <div class="carousel-wrapper">
+            <div class="carousel-slide">
+              <a href="products/honor/x9b.html">
+                <picture>
+                  <source srcset="images/banner1_3X.jpg" media="(min-width: 842px)" />
+                  <img src="images/banner1_1X.jpg" />
+                </picture>
+              </a>
+            </div>
+            <div class="carousel-slide">
+              <a href="products/infinix/note-40-pro.html">
+                <picture>
+                  <source srcset="images/banner2_3X.jpg" media="(min-width: 842px)" />
+                  <img src="images/banner2_1X.jpg" />
+                </picture>
+              </a>
+            </div>
+            <div class="carousel-slide">
+              <a href="products/redmi/note-13-pro.html">
+                <picture>
+                  <source srcset="images/banner3_3X.jpg" media="(min-width: 842px)" />
+                  <img src="images/banner3_1X.jpg" />
+                </picture>
+              </a>
+            </div>
+            <div class="carousel-slide">
+              <a href="products/samsung/zflip.html">
+                <picture>
+                  <source srcset="images/banner4_3X.jpg" media="(min-width: 842px)" />
+                  <img src="images/banner4_1X.jpg" />
+                </picture>
+              </a>
+            </div>
+          </div>
+          <button class="carousel-prev">&lt;</button>
+          <button class="carousel-next">&gt;</button>
+        </div>
+      </div>
+    </div>
+    <!--EMPIEZA SECCION MODIFICADA POR RUTH-->
+    <div class="ms-section">
+      <div class="ms-title">
+        <span>MARCAS</span>
+      </div>
+      <div class="ms-products-outer">
+        <div class="ms-products">
+          <a href="products/honor/honor.html">
+            <div class="ms-one-product">
+              <img srcset="images/imagen2_1x.jpg 320w, images/imagen2_1x.jpg 147w, images/imagen2_1x.jpg 297w" sizes="(max-width: 842px) 320px,
+                                        (max-width: 1440px) 147px,
+                                        297px" alt="Honor" src="images/imagen2_3X.jpg">
+              <div class="ms-one-p-title">
+                <span>Honor</span>
+              </div>
+              <div>
+                <button class="button-34" role="button">ver más</button>
+              </div>
+            </div>
+          </a>
+          <a href="products/infinix/infinix.html">
+            <div class="ms-one-product">
+              <img srcset="images/imagen1_1X.jpg 320w, images/imagen1_1X.jpg 147w, images/imagen1_1X.jpg 297w" sizes="(max-width: 842px) 320px,
+                                        (max-width: 1440px) 147px,
+                                        297px" alt="Infinix" src="images/imagen1_3X.jpg">
+              <div class="ms-one-p-title">
+                <span>Infinix</span>
+              </div>
+              <div>
+                <button class="button-34" role="button">ver más</button>
+              </div>
+            </div>
+          </a>
+          <a href="products/redmi/redmi.html">
+            <div class="ms-one-product">
+              <img srcset="images/imagen3_1x.jpg 320w, images/imagen3_1x.jpg 147w, images/imagen3_1x.jpg 297w" sizes="(max-width: 842px) 320px,
+                                        (max-width: 1440px) 147px,
+                                        297px" alt="Redmi" src="images/imagen3_1x.jpg">
+              <div class="ms-one-p-title">
+                <span>Redmi</span>
+              </div>
+              <div>
+                <button class="button-34" role="button">ver más</button>
+              </div>
+            </div>
+          </a>
+          <a href="products/samsung/samsung.html">
+            <div class="ms-one-product">
+              <img srcset="images/imagen4_1X.jpg 320w, images/imagen4_1X.jpg 147w, images/imagen4_1X.jpg 297w" sizes="(max-width: 842px) 320px,
+                                        (max-width: 1440px) 147px,
+                                        297px" alt="Samsung" src="images/imagen4_1X.jpg">
+              <div class="ms-one-p-title">
+                <span>Samsung</span>
+              </div>
+              <div>
+                <button class="button-34" role="button">ver más</button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--TERMINA SECCION MODIFICADA POR RUTH-->
+    <div id="distributor" class="distributor">
+      <div class="anchor" id="conviertete-en-distribuidor"></div>
+      <span class="distributor-title">CONVIÉRTETE EN DISTRIBUIDOR</span>
+      <br>
+      <br>
+      <span class="distributor-text">Ser un distribuidor asociado con Duocell es más que simplemente vender productos, es acceder a la mejor tecnología móvil respaldada por marcas líderes y una red sólida. Nuestra amplia gama de productos de última generación, combinada con un servicio al cliente excepcional y soluciones personalizadas, te brinda las herramientas necesarias para destacarte en un mercado competitivo y en constante evolución. Únete a Duocell y descubre cómo podemos ayudarte a crecer como distribuidor en la industria tecnológica.</span>
+      <div class="distributor-form-container">
+        <div class="distributor-form">
+          <div class="distributor-field field-2">
+            <label for="names">Nombres completos*</label>
+            <input id="names" type="text" name="names" placeholder="Marco">
+          </div>
+          <div class="distributor-field">
+            <label>Provincia*</label>
+            <select id="province" name="province">
+              <option value="0">(Escoge una provincia)</option>
+              <option value="Azuay">Azuay</option>
+              <option value="Bolivar">Bolívar</option>
+              <option value="Cañar">Cañar</option>
+              <option value="Chimborazo">Chimborazo</option>
+              <option value="Cotopaxi">Cotopaxi</option>
+              <option value="ElOro">El Oro</option>
+              <option value="Esmeraldas">Esmeraldas</option>
+              <option value="Galapagos">Galápagos</option>
+              <option value="Guayas">Guayas</option>
+              <option value="Imbabura">Imbabura</option>
+              <option value="Loja">Loja</option>
+              <option value="LosRios">Los Ríos</option>
+              <option value="Manabi">Manabí</option>
+              <option value="MoronaSantiago">Morona Santiago</option>
+              <option value="Napo">Napo</option>
+              <option value="Orellana">Orellana</option>
+              <option value="Pastaza">Pastaza</option>
+              <option value="Pichincha">Pichincha</option>
+              <option value="SantaElena">Santa Elena</option>
+              <option value="SantoDomingo">Santo Domingo de los Tsáchilas</option>
+              <option value="Sucumbios">Sucumbíos</option>
+              <option value="Tungurahua">Tungurahua</option>
+              <option value="ZamoraChinchipe">Zamora Chinchipe</option>
+            </select>
+          </div>
+          <div class="distributor-field">
+            <label for="city">Ciudad*</label>
+            <input id="city" type="text" name="city" placeholder="Guayaquil">
+          </div>
+          <div class="distributor-field field-2">
+            <label for="address">Dirección del local*</label>
+            <textarea id="address" name="address" rows="4" placeholder="Av. Ejemplo y Calle Ejemplo 322"></textarea>
+          </div>
+          <div class="distributor-field">
+            <label for="email">E-mail*</label>
+            <input id="email" type="text" name="email" placeholder="marco@ejemplo.com">
+          </div>
+          <div class="distributor-field">
+            <label for="phone">Teléfono*</label>
+            <input id="phone" type="text" name="phone" placeholder="0991234567">
+          </div>
+          <div class="distributor-field field-2">
+            <label for="detail">Descríbenos tu negocio*</label>
+            <textarea id="detail" name="detail" rows="4" placeholder="Más detalles sobre tu negocio"></textarea>
+          </div>
+          <span class="form-error field-2"></span>
+          <div class="form-send-container field-2">
+            <div onclick="sendEmail();" class="form-send">Enviar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="clients" class="clients">
+      <div class="anchor" id="nuestros-clientes"></div>
+      <div class="clients-title">
+        <span>NUESTROS CLIENTES </b>
+        </span>
+      </div>
+      <div class="clients-logos">
+        <img class="image-logo" alt="Logo DePrati" src="images/de_prati_t.png">
+        <img class="image-logo" alt="Logo Marcimex" src="images/marcimex_t.png">
+        <img class="image-logo" alt="Logo Pycca" src="images/pycca_t.png">
+        <img class="image-logo" alt="Logo Unicomer" src="images/unicomer_t.png">
+        <img class="image-logo" alt="Logo Cresa" src="images/cresa_t.png">
+        <img class="image-logo" alt="Logo Corporación Favorita" src="images/corporacion_favorita_t.png">
+        <img class="image-logo" alt="Logo Tia" src="images/tia_t.png">
+        <img class="image-logo" alt="Logo Tventas" src="images/tventas_t.png">
+        <img class="image-logo" alt="Logo Jaher" src="images/jaher_t.png">
+        <img class="image-logo" alt="Logo Etafashion" src="images/etafashion_t.png">
+        <img class="image-logo" alt="Logo La Victoria" src="images/la_victoria_t.png">
+        <img class="image-logo" alt="Logo Celular Planet" src="images/celular_planet_t.png">
+      </div>
+    </div>
+    <!--<div id="who-we-are" class="who-we-are"><div id="quienes-somos" class="anchor"></div><div class="who-we-are-square"><div class="who-we-are-title">QUIENES SOMOS</div><div class="who-we-are-text">En DUOCELL S.A. somos una empresa con 14 años de experiencia que sigue una filosofía empresarial simple: el dedicar el talento de nuestro equipo para brindar un excelente servicio a nuestros clientes. <br><br> El futuro que nos espera es emocionante, y nosotros sabemos que estamos destinados a compartir la magia del mañana, con todo el que la necesita.
+          </div></div><div class="who-we-are-highlights"><div class="who-we-are-highlight"><img class="iconos_quienes"             
+            src="images/iconos_quienes_somos/VENTAS.png"><div><span class="increment" data-top="51">1</span> MM
+            </div><div>Ventas anuales 2023</div></div><div class="who-we-are-highlight"><img class="iconos_quienes"             
+            src="images/iconos_quienes_somos/EXPERIENCIA.png"><div><span class="increment" data-top="14">1</span> años
+            </div><div>Experiencia en telefonía celular</div></div><div class="who-we-are-highlight"><img class="iconos_quienes"             
+            src="images/iconos_quienes_somos/EKOS.png"><div>Top 500 empresas</div><div>Ranking de las empresas más importantes del país</div></div><div class="who-we-are-highlight"><img class="iconos_quienes"             
+            src="images/iconos_quienes_somos/EQUIPO.png"><div><span class="increment" data-top="119">1</span> empleados
+            </div><div>Equipo Duocell</div></div></div></div>-->
+    <div id="who-we-are" class="who-we-are">
+      <div id="quienes-somos" class="anchor"></div>
+      <div class="grid-row">
+          <div class="who-we-are-highlight" style="border: none;background: rgba(0, 0, 0, 0); box-shadow:none">
+          <div class="who-we-are-title">QUIENES SOMOS</div>
+          <div class="who-we-are-text">En DUOCELL S.A. somos una empresa con 14 años de experiencia que sigue una filosofía empresarial simple: el dedicar el talento de nuestro equipo para brindar un excelente servicio a nuestros clientes. <br>
+            <br> El futuro que nos espera es emocionante, y nosotros sabemos que estamos destinados a compartir la magia del mañana, con todo el que la necesita.
+          </div>
+        </div>      
+        <div class="who-we-are-highlight" style="border: none;background: rgba(0, 0, 0, 0); box-shadow:none">
+          <div class="who-we-are-highlights">
+            <div class="who-we-are-highlight">
+              <img class="iconos_quienes" src="images/iconos_quienes_somos/VENTAS.png">
+              <div>
+                <span class="increment" data-top="51">1</span> MM
+              </div>
+              <div>Ventas anuales 2023</div>
+            </div>
+            <div class="who-we-are-highlight">
+              <img class="iconos_quienes" src="images/iconos_quienes_somos/EXPERIENCIA.png">
+              <div>
+                <span class="increment" data-top="14">1</span> años
+              </div>
+              <div>Experiencia en telefonía celular</div>
+            </div>
+          </div>
+          <div class="who-we-are-highlights">
+            <div class="who-we-are-highlight">
+              <img class="iconos_quienes" src="images/iconos_quienes_somos/EKOS.png">
+              <div>Top 500 empresas</div>
+              <div>Ranking de las empresas más importantes del país</div>
+            </div>
+            <div class="who-we-are-highlight">
+              <img class="iconos_quienes" src="images/iconos_quienes_somos/EQUIPO.png">
+              <div>
+                <span class="increment" data-top="119">1</span> empleados
+              </div>
+              <div>Equipo Duocell</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="anchor" id="contactanos"></div>
+      <div class="footer-links">
+        <img class="footer-links-first " src="images/footer_logo.svg">
+        <div class="footer-net">
+          <a href="https://www.instagram.com/duocellsa/" target="_blank">
+            <svg class="send-link footer-1" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.71008 1.91C12.2601 1.91 12.5701 1.91 13.5801 1.97C14.5101 2.01 15.0201 2.17 15.3601 2.3C15.8101 2.47 16.1301 2.68 16.4601 3.02C16.7901 3.35 17.0002 3.67 17.1802 4.12C17.3102 4.46 17.4701 4.95999 17.5101 5.89999C17.5601 6.90999 17.5701 7.21 17.5701 9.77C17.5701 12.33 17.5701 12.63 17.5101 13.64C17.4701 14.57 17.3102 15.08 17.1802 15.42C17.0102 15.87 16.8001 16.19 16.4601 16.52C16.1301 16.85 15.8101 17.06 15.3601 17.24C15.0201 17.37 14.5201 17.53 13.5801 17.57C12.5701 17.62 12.2701 17.63 9.71008 17.63C7.15008 17.63 6.85009 17.63 5.84009 17.57C4.91009 17.53 4.40018 17.37 4.06018 17.24C3.61018 17.07 3.29008 16.86 2.96008 16.52C2.63008 16.19 2.42011 15.87 2.24011 15.42C2.11011 15.08 1.95016 14.58 1.91016 13.64C1.86016 12.63 1.8501 12.33 1.8501 9.77C1.8501 7.21 1.85016 6.90999 1.91016 5.89999C1.95016 4.96999 2.11011 4.46 2.24011 4.12C2.41011 3.67 2.62008 3.35 2.96008 3.02C3.29008 2.69 3.61018 2.48 4.06018 2.3C4.40018 2.17 4.90009 2.01 5.84009 1.97C6.85009 1.92 7.15008 1.91 9.71008 1.91ZM9.71008 0.190002C7.11008 0.190002 6.79014 0.2 5.77014 0.25C4.75014 0.3 4.06007 0.460002 3.45007 0.690002C2.82007 0.930002 2.29013 1.25999 1.76013 1.78999C1.23013 2.31999 0.900156 2.86 0.660156 3.48C0.420156 4.09 0.260093 4.78 0.220093 5.8C0.170093 6.82 0.160156 7.15001 0.160156 9.74001C0.160156 12.33 0.170093 12.66 0.220093 13.68C0.270093 14.7 0.430156 15.39 0.660156 16C0.900156 16.63 1.23013 17.16 1.76013 17.69C2.29013 18.22 2.83007 18.55 3.45007 18.79C4.06007 19.03 4.75014 19.19 5.77014 19.23C6.79014 19.28 7.12008 19.29 9.71008 19.29C12.3001 19.29 12.6301 19.28 13.6501 19.23C14.6701 19.18 15.3601 19.02 15.9701 18.79C16.6001 18.55 17.1302 18.22 17.6602 17.69C18.1902 17.16 18.5201 16.62 18.7601 16C19.0001 15.39 19.1601 14.7 19.2001 13.68C19.2501 12.66 19.2601 12.33 19.2601 9.74001C19.2601 7.15001 19.2501 6.82 19.2001 5.8C19.1501 4.78 18.9901 4.09 18.7601 3.48C18.5201 2.85 18.1902 2.31999 17.6602 1.78999C17.1302 1.25999 16.5901 0.930002 15.9701 0.690002C15.3601 0.450002 14.6701 0.29 13.6501 0.25C12.6301 0.2 12.3001 0.190002 9.71008 0.190002Z" />
+              <path d="M9.70972 4.84C6.99972 4.84 4.7998 7.04 4.7998 9.75C4.7998 12.46 6.99972 14.66 9.70972 14.66C12.4197 14.66 14.6198 12.46 14.6198 9.75C14.6198 7.04 12.4197 4.84 9.70972 4.84ZM9.70972 12.94C7.94972 12.94 6.51978 11.51 6.51978 9.75C6.51978 7.99 7.94972 6.56 9.70972 6.56C11.4697 6.56 12.8998 7.99 12.8998 9.75C12.8998 11.51 11.4697 12.94 9.70972 12.94Z" />
+              <path d="M14.8198 5.8C15.455 5.8 15.9698 5.28512 15.9698 4.64999C15.9698 4.01487 15.455 3.5 14.8198 3.5C14.1847 3.5 13.6699 4.01487 13.6699 4.64999C13.6699 5.28512 14.1847 5.8 14.8198 5.8Z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/duocellsa/" target="_blank">
+            <svg class="send-link footer-2" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.9895 7.35004C9.2095 7.10004 9.39952 6.84003 9.62952 6.62003C10.3395 5.95003 11.1795 5.61003 12.1595 5.62003C12.6995 5.62003 13.2295 5.66003 13.7495 5.81003C14.9395 6.15003 15.6295 6.97004 15.9595 8.13004C16.2095 9.00004 16.2495 9.89002 16.2495 10.79C16.2495 12.68 16.2495 14.57 16.2495 16.46C16.2495 16.64 16.1995 16.68 16.0295 16.68C15.0595 16.68 14.0795 16.68 13.1095 16.68C12.9395 16.68 12.8995 16.63 12.8995 16.47C12.8995 14.67 12.8995 12.87 12.8995 11.08C12.8995 10.63 12.8695 10.18 12.7395 9.74004C12.5095 8.93004 11.9295 8.52004 11.0795 8.57004C9.92947 8.63004 9.32957 9.20004 9.17957 10.38C9.13957 10.66 9.12952 10.94 9.12952 11.22C9.12952 12.97 9.12952 14.72 9.12952 16.47C9.12952 16.64 9.08955 16.7 8.90955 16.69C7.92955 16.69 6.94948 16.69 5.96948 16.69C5.80948 16.69 5.76953 16.65 5.76953 16.49C5.76953 13.03 5.76953 9.56004 5.76953 6.10004C5.76953 5.93004 5.8295 5.89003 5.9895 5.89003C6.9195 5.89003 7.84954 5.89003 8.77954 5.89003C8.94954 5.89003 8.9995 5.94003 8.9895 6.11003C8.9895 6.52003 8.9895 6.94004 8.9895 7.35004Z" />
+              <path d="M3.65002 11.31C3.65002 13.02 3.65002 14.74 3.65002 16.45C3.65002 16.64 3.60003 16.7 3.41003 16.7C2.44003 16.69 1.45999 16.7 0.48999 16.7C0.32999 16.7 0.290039 16.66 0.290039 16.5C0.290039 13.03 0.290039 9.56004 0.290039 6.10004C0.290039 5.96004 0.31998 5.91003 0.47998 5.91003C1.46998 5.91003 2.44994 5.91003 3.43994 5.91003C3.62994 5.91003 3.66003 5.98003 3.66003 6.14003C3.66003 7.87003 3.66003 9.59004 3.66003 11.32L3.65002 11.31Z" />
+              <path d="M3.92004 2.46002C3.92004 3.54002 3.04998 4.41002 1.97998 4.41002C0.919981 4.41002 0.0400391 3.53002 0.0400391 2.47002C0.0400391 1.40002 0.91999 0.52002 1.98999 0.52002C3.04999 0.52002 3.93005 1.39001 3.93005 2.45001L3.92004 2.46002Z" />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/Duocellec" target="_blank">
+            <svg class="send-link footer-3" width="10" height="17" viewBox="0 0 10 17" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.57983 9.52002L9.01984 6.62988H6.24985V4.76001C6.24985 3.97001 6.63985 3.19995 7.87985 3.19995H9.13986V0.73999C9.13986 0.73999 7.99984 0.540039 6.89984 0.540039C4.61984 0.540039 3.12985 1.91993 3.12985 4.42993V6.62988H0.589844V9.52002H3.12985V16.5C3.63985 16.58 4.15985 16.6201 4.68985 16.6201C5.21985 16.6201 5.73985 16.58 6.24985 16.5V9.52002H8.57983Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="address">
+        <span class="address-talk">¡Conversemos!</span>
+        <div class="address-body">
+          <div class="address-support address-anim">
+            <div>
+              <span class="address-title">Whatsapp support</span>
+              <br> +593 96327 8889
+            </div>
+            <div>
+              <span class="address-title">E-mail</span>
+              <br> ventas@duocell.com.ec
+            </div>
+          </div>
+          <div class="address-places address-anim">
+            <div>
+              <span class="address-title city-title">Guayaquil</span>
+              <br>
+              <a href="https://www.google.com/maps/place/Duo+Cell+S.A/@-2.1669558,-79.898725,17z/data=!3m1!4b1!4m6!3m5!1s0x902d6d271e7a68a5:0xd14a735e876c1ca8!8m2!3d-2.1669612!4d-79.8961501!16s%2Fg%2F11jzwjn498?entry=ttu" target="_blank">
+                <div>
+                  <svg class="location_icon" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>Av. Francisco de Orellana 234 <br> Edificio BLUE TOWERS <br> oficina 1508-1509 piso 15 <br> Junto al hotel Marriot
+                </div>
+              </a>
+            </div>
+            <div>
+              <span class="address-title city-title">Quito</span>
+              <br>
+              <a target="_blank" href="https://www.google.com/maps/place/Almagro+Plaza,+Diego+de+Almagro,+Quito+170135,+Ecuador/@-0.192272,-78.4845964,17z/data=!3m1!4b1!4m6!3m5!1s0x91d59a7a737e876f:0xf000e0392458cf26!8m2!3d-0.1922774!4d-78.4820215!16s%2Fg%2F11bbrlznpn?entry=ttu">
+                <div>
+                  <svg class="location_icon" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>Pedro Ponce Carrasco SN E8 <br> intersección Diego Almagro <br> Edificio ALMAGRO PLAZA <br> oficina 1106 piso 11 <br> 100 metros al norte del IBM
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="address-3-col address-anim">
+            <span class="address-title city-title">Guayaquil</span>
+            <br>
+            <a href="https://www.google.com/maps/place/Duo+Cell+S.A/@-2.1669558,-79.898725,17z/data=!3m1!4b1!4m6!3m5!1s0x902d6d271e7a68a5:0xd14a735e876c1ca8!8m2!3d-2.1669612!4d-79.8961501!16s%2Fg%2F11jzwjn498?entry=ttu" target="_blank">
+              <div>
+                <svg class="location_icon" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>Av. Francisco de Orellana 234 <br> Edificio BLUE TOWERS <br> oficina 1508-1509 piso 15 <br> Junto al hotel Marriot
+              </div>
+            </a>
+          </div>
+          <div class="address-3-col address-anim">
+            <span class="address-title city-title">Quito</span>
+            <br>
+            <a target="_blank" href="https://www.google.com/maps/place/Almagro+Plaza,+Diego+de+Almagro,+Quito+170135,+Ecuador/@-0.192272,-78.4845964,17z/data=!3m1!4b1!4m6!3m5!1s0x91d59a7a737e876f:0xf000e0392458cf26!8m2!3d-0.1922774!4d-78.4820215!16s%2Fg%2F11bbrlznpn?entry=ttu">
+              <div>
+                <svg class="location_icon" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>Pedro Ponce Carrasco SN E8 <br> intersección Diego Almagro <br> Edificio ALMAGRO PLAZA <br> oficina 1106 piso 11 <br> 100 metros al norte del IBM
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="sending-screen">
+      <div class="sending-area">
+        <dotlottie-player style="height: 200px;width: 320px;" autoplay mode="normal"></dotlottie-player>
+        <div class="sending-message">Enviando</div>
+        <div class="sending-result">Enviado</div>
+        <div class="sending-second-result">Error al enviar. Intente más tarde.</div>
+        <a href="javascript:void(0)" class="sending-close" onclick="closeSendModal()">&times;</a>
+      </div>
+    </div>
+    <a class="whatsapp" aria-label="Chatea en WhatsApp" target="_blank" href="https://wa.me/593963278889">
+      <img alt="Chat on WhatsApp" src="images/whatsapp-icon.png" />
+    </a>
+    <script>
+      let nombres = document.getElementById("names");
+      let provincia = document.getElementById("province");
+      let ciudad = document.getElementById("city");
+      let direccion = document.getElementById("address");
+      let email = document.getElementById("email");
+      let phone = document.getElementById("phone");
+      let detail = document.getElementById("detail");
+      let sendingScreen = document.getElementsByClassName("sending-screen")[0];
+      const dPlayer = document.querySelector('dotlottie-player');
+      const sendingMessage = document.getElementsByClassName("sending-message")[0];
+      const sendingClose = document.getElementsByClassName("sending-close")[0];
+      const sendingResult = document.getElementsByClassName("sending-result")[0];
+      const sendingSecondResult = document.getElementsByClassName("sending-second-result")[0];
+      window.onload = (event) => {
+        dPlayer.load('lottie/envelope.json');
+      };
+
+      function endGoodEmail() {
+        hideDiv(sendingMessage);
+        hideDiv(sendingSecondResult);
+        showDiv(sendingClose);
+        sendingResult.innerHTML = "Enviado";
+        showDiv(sendingResult);
+        dPlayer.load('lottie/ok.json');
+      }
+
+      function endBadEmail() {
+        hideDiv(sendingMessage);
+        showDiv(sendingClose);
+        hideDiv(sendingResult);
+        showDiv(sendingSecondResult);
+        // TODO: download animation
+        dPlayer.load('lottie/error.json');
+      }
+
+      function clearForm() {
+        nombres.value = "";
+        provincia.value = "0"
+        ciudad.value = "";
+        direccion.value = "";
+        email.value = "";
+        phone.value = "";
+        detail.value = "";
+      }
+
+      function showDiv(theDiv) {
+        theDiv.style.display = "block";
+      }
+
+      function hideDiv(theDiv) {
+        theDiv.style.display = "none";
+      }
+
+      function closeSendModal() {
+        if (sendingScreen.classList.contains('non-transparent')) {
+          sendingScreen.classList.remove('non-transparent');
+        }
+        if (sendingScreen.classList.contains('clickable')) {
+          sendingScreen.classList.remove('clickable');
+        }
+      }
+
+      function sendEmail() {
+        hideDiv(sendingClose);
+        hideDiv(sendingResult);
+        hideDiv(sendingSecondResult);
+        if (!sendingScreen.classList.contains('clickable')) {
+          sendingScreen.classList.add('clickable');
+        }
+        if (!validateEmail()) {
+          sendingScreen.classList.remove('clickable');
+          return;
+        }
+        // disable button
+        if (!sendingScreen.classList.contains('non-transparent')) {
+          sendingScreen.classList.add('non-transparent');
+        }
+        // show sending message button
+        dPlayer.load('lottie/envelope.json');
+        showDiv(sendingMessage);
+        // JSON data to send
+        const jsonData = {
+          "message": `
+                
+																																																																
+																																																																<style>
+                    table th, table td {
+                        border: 1px solid rgb(118,118,118);padding:8px;
+                    }
+                </style>
+                Formulario de contacto
+																																																																
+																																																																<br>
+																																																																	<table >
+																																																																		<tr>
+																																																																			<th>Campo</th>
+																																																																			<th>Contenido</th>
+																																																																		</tr>
+																																																																		<tr>
+																																																																			<td>Nombre completos</td>
+																																																																			<td>${nombres.value}</td>
+																																																																		</tr>
+																																																																		<tr>
+																																																																			<td>Provincia</td>
+																																																																			<td>${provincia.value}</td>
+																																																																		</tr>
+																																																																		<tr>
+																																																																			<td>Ciudad</td>
+																																																																			<td>${ciudad.value}</td>
+																																																																		</tr>
+																																																																		<tr>
+																																																																			<td>Dirección del local</td>
+																																																																			<td>${direccion.value}</td>
+																																																																		</tr>
+																																																																		<tr>
+																																																																			<td>Email</td>
+																																																																			<td>${email.value}</td>
+																																																																		</tr>
+																																																																		<tr>
+																																																																			<td>Teléfono</td>
+																																																																			<td>${phone.value}</td>
+																																																																		</tr>
+																																																																		<tr>
+																																																																			<td>Descripción del negocio</td>
+																																																																			<td>${detail.value}</td>
+																																																																		</tr>
+																																																																	</table>
+                    `
+        };
+        // Make HTTP POST request to PHP script
+        fetch('send_mail.php', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(jsonData),
+        }).then(response => {
+          if (!response.ok) {
+            endBadEmail();
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        }).then(data => {
+          // TODO: Check if there is a bad response
+          if (data.success) {
+            endGoodEmail();
+            clearForm();
+            // TODO: clean fields 
+          } else {
+            endBadEmail();
+          }
+          console.log('Response from PHP:', data);
+        }).catch(error => {
+          endBadEmail();
+          console.error('There was a problem with the fetch operation:', error);
+        });
+      }
+
+      function validateEmail() {
+        let errorMessage = document.getElementsByClassName("form-error")[0];
+        errorMessage.innerHTML = " ";
+        if (nombres.value == "") {
+          errorMessage.innerHTML = "Ingresa tus nombres completos";
+          return false;
+        }
+        if (provincia.value == "0") {
+          errorMessage.innerHTML = "Selecciona tu provincia";
+          return false;
+        }
+        if (ciudad.value == "") {
+          errorMessage.innerHTML = "Ingresa tu ciudad";
+          return false;
+        }
+        if (direccion.value == "") {
+          errorMessage.innerHTML = "Ingresa tu dirección";
+          return false;
+        }
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (!email.value.match(validRegex)) {
+          errorMessage.innerHTML = "Ingresa tu correo";
+          return false;
+        }
+        // TODO: Check numbers in phone or prevent entering stuff
+        if (phone.value == "") {
+          errorMessage.innerHTML = "Ingresa tu teléfono";
+          return false;
+        }
+        if (detail.value == "") {
+          errorMessage.innerHTML = "Descríbenos tu negocio";
+          return false;
+        }
+        return true;
+      }
+      let actualScroll = 0;
+      const fixedHeader = document.getElementsByClassName("fixed-header")[0];
+      window.addEventListener('scroll', () => {
+        const verticalScrollPosition = window.pageYOffset;
+        const isActive = fixedHeader.classList.contains("hide-fixed-header");
+        if (verticalScrollPosition > actualScroll) {
+          if (!isActive) {
+            fixedHeader.classList.add("hide-fixed-header");
+            hideNav();
+          }
+        } else {
+          if (isActive) {
+            fixedHeader.classList.remove("hide-fixed-header");
+            showNav();
+          }
+        }
+        actualScroll = verticalScrollPosition;
+      });
+      let firstNav = document.getElementById("first-nav");
+      let secondNav = document.getElementById("second-nav");
+
+      function hideNav() {
+        const isActive = firstNav.classList.contains("visible-nav");
+        if (isActive) {
+          firstNav.classList.remove("visible-nav");
+          firstNav.classList.add("hidden-nav");
+          secondNav.classList.add("visible-nav");
+          secondNav.classList.remove("hidden-nav");
+        }
+      }
+
+      function showNav() {
+        const isActive = firstNav.classList.contains("hidden-nav");
+        if (isActive) {
+          firstNav.classList.add("visible-nav");
+          firstNav.classList.remove("hidden-nav");
+          secondNav.classList.remove("visible-nav");
+          secondNav.classList.add("hidden-nav");
+        }
+      }
+      const carouselWrapper = document.querySelector('.carousel-wrapper');
+      const slides = document.querySelectorAll('.carousel-slide');
+      const prevBtn = document.querySelector('.carousel-prev');
+      const nextBtn = document.querySelector('.carousel-next');
+      let currentIndex = 0;
+      // Set initial position of the carousel
+      carouselWrapper.style.transform = `translateX(0)`;
+      // Function to move to the next slide
+      function goToNextSlide() {
+        if (currentIndex < slides.length - 1) {
+          currentIndex++;
+          carouselWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+      }
+      // Function to move to the previous slide
+      function goToPrevSlide() {
+        if (currentIndex > 0) {
+          currentIndex--;
+          carouselWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+      }
+      // Event listeners for prev and next buttons
+      prevBtn.addEventListener('click', goToPrevSlide);
+      nextBtn.addEventListener('click', goToNextSlide);
+      assingObserver('.ms-one-product', 'ms-one-product-visible');
+      assingObserver('.ms-one-p-title', 'ms-one-p-title-visible');
+      assingObserver('.image-logo', 'image-logo-visible');
+      assingObserver('.address-anim', 'address-anim-visible');
+      assingObserver('.who-we-are-highlight', 'who-we-are-highlight-visible');
+      let intervals = [];
+      let counters = [];
+
+      function assingObserver(originalClass, animClass) {
+        const elements = document.querySelectorAll(originalClass);
+        const options = {
+          root: null,
+          rootMargin: '0px',
+          threshold: .4
+        }
+        const elementCallbacks = (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.classList.contains(animClass)) {
+              entry.target.classList.add(animClass);
+              // extra case
+              if (originalClass == '.who-we-are-highlight') {
+                entry.target.querySelectorAll('span').forEach(element => {
+                  countUp(element, element.getAttribute("data-top"));
+                  /*
+                  setInterval((element,howMany)=> {
+                      // method to be executed;
+                      console.log(howMany);
+                      element = element.getAttribute("data-top");
+                      counters[howMany]++;
+                      element.textContent = counters[howMany];
+                  }, 200)
+                  */
+                })
+              }
+            }
+          });
+        }
+        let elementObserver = new IntersectionObserver(elementCallbacks, options);
+        elements.forEach(element => {
+          elementObserver.observe(element);
+        });
+      }
+
+      function countUp(element, top) {
+        let i = 0;
+        let elementNumber = element.innerText;
+        let counterSpeed = 1000 / top; // the bigger the number the faster the speed
+        let id = setInterval(function() {
+          element.innerText = ++i;
+          if (i == top) {
+            clearInterval(id);
+          }
+        }, counterSpeed);
+      }
+    </script>
+  </body>
+</html>
